@@ -61,7 +61,7 @@
 			                		</vbox>
 			                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
 				                		
-				                		<button label="x" />
+				                		<button label="X" />
 			                		</vbox>
 			    </hbox>
 			    <hbox width="100%" style="background-color: #FBFCFE; padding: 5px; " spacing="0" align="center" pack="start">            
@@ -73,8 +73,8 @@
 			                		</vbox>
 			                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
 				                		
-				                		<button label="x" />
-			                		</vbox>
+				                		<button label="X" />
+			                		</vbox> 
 			                		
 			  </hbox>
 		 </vbox>
