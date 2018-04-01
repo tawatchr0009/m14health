@@ -26,7 +26,8 @@
 			</north>
 		
 			<center border="none" flex="true" autoscroll="true" style="background-color: #D9E6F5;">
-				<vbox self="@insert(content)"/>
+				
+					<vlayout self="@insert(content)" style="overflow:auto" />
                
             </center>
 		

@@ -45,8 +45,157 @@
 	                </hbox>
                 </hbox>
          </hbox>
-        
-        
+        <separator height="5px"/>
+        <vbox width="100%" spacing=".1em">
+	         <hbox width="100%" align="center" pack="center"  style="background-color: #FBFCFE; padding: 2px;">
+		         	<hbox  hflex="2" vflex="1" align="center" pack="start" >
+		         		ค่ารักษาโรคไขมันในเลือดสูง
+		         	</hbox>
+		         	<hbox  hflex="1" vflex="1"  align="center" pack="end"  >
+		         		THB 373,000
+		         	</hbox>
+	         </hbox>
+		     
+		     <hbox width="100%" style="background-color: #FBFCFE;">
+		         
+		       
+		           		<vbox align="center" pack="center" spacing="0"  hflex="1">
+			                		
+		                		</vbox>
+		                
+		               
+		                		<vbox align="center" pack="center" spacing="0"  hflex="1">
+			                		<label value="ค่าห้อง" style="font-size: 12px" />
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		               
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0">
+			                		<label value="ค่าผ่าตัด" style="font-size: 12px"/>
+			                		<label value="500,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		              
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" >
+			                		<label value="ค่ารักษา" style="font-size: 12px"/>
+			                		<label value="500,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" >
+			                		<label value="ค่าตรวจ" style="font-size: 12px"/>
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		        		
+         
+         		
+         		</hbox>
+         		
+         		 <hbox width="100%" style="background-color: #FBFCFE; ">
+		         
+		       
+		           		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		<label value="30 บาท" style="font-size: 12px"/>
+			                		<label value="รักษาทุกโรค" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               
+		                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		               
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="50,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		              
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="500" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		        		
+         
+         		
+         		</hbox>
+         		<hbox width="100%" style="background-color: #FBFCFE; ">
+		         
+		       
+		           		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		<label value="AIA 20PAY" style="font-size: 12px"/>
+			                		<label value="LIFE (PAR)" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               
+		                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		               
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="50,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		              
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="500" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		        		
+         
+         		
+         		</hbox>
+         		<hbox width="100%" style="background-color: #FBFCFE; ">
+		         
+		       
+		           		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		<label value="." style="font-size: 12px"/>
+			                		<label value="." style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               
+		                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		
+			                		<label value="ครอบคลุม" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		               
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="-50,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		              
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="-100,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="ครอบคลุม" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		        		
+         
+         		
+         		</hbox>
+		</vbox>
 	</vbox>
-	
 </zk>

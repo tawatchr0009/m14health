@@ -36,7 +36,7 @@
 		
 		
 	</hbox>
-	<vbox self="@define(content)" vflex="1" hflex="2" align="center" pack="start">
+	<vlayout self="@define(content)" vflex="1" hflex="2" style="overflow:auto">
 		<hbox hflex="2">
 			<hbox hflex="1" align="center" pack="center" style="background-color: #FBFCFE" zclass="left-menu-box">
 				<image src="/images/icons/indicators.png" height="30px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
@@ -49,20 +49,251 @@
 		</hbox>
 		<separator height="10px"/>
 		<hbox align="center" pack="start" width="100%" >
-			<label value="สวัสดิการที่นำมาคำนวณ" />
+			<label value="สวัสดิการ - ภาครัฐ/องค์กร" />
 		</hbox>
-		
+		<vbox width="100%" spacing="0" style="background-color: green;" >
+			 <hbox width="100%" style="background-color: #FBFCFE; padding: 5px; " spacing="0" align="center" pack="center">
+			         		
+			       			
+			           		<vbox align="center" pack="center" spacing="0"  hflex="4" vflex="1">
+				                		<label value="30บาท รักษาทุกโรค" />
+				                		
+			                		</vbox>
+			                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+				                		
+				                		<button label="x" />
+			                		</vbox>
+			    </hbox>
+			    <hbox width="100%" style="background-color: #FBFCFE; padding: 5px; " spacing="0" align="center" pack="start">            
+			               
+			       
+			           		<vbox align="center" pack="center" spacing="0"  hflex="4" vflex="1">
+				                		<label value="AIA 20PAY" />
+				                		
+			                		</vbox>
+			                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+				                		
+				                		<button label="x" />
+			                		</vbox>
+			                		
+			  </hbox>
+		 </vbox>
+		<hbox width="100%">
+			
+			<combobox  value="โปรดระบุ">
+				<comboitem label="30บาท รักษาทุกโรค"/>
+				<comboitem label="ประกันชีวิต"/>
+				<comboitem label="ระบุเอง"/>
+			</combobox>
+			<separator width="10px"/>
+			<button label="เพิ่ม" />
+		</hbox>
 		
 		<separator height="10px"/>
 		<hbox align="center" pack="start" width="100%" >
-			<label value="โรงพยาบาล" />
+			<label value="ค่ารักษา - โรงพยาบาล" />
 		</hbox>
-		<combobox width="100%" value="โรงพยาบาลรามาธิบดี">
-			<comboitem label="โรงพยาบาลรามาธิบดี"/>
-		</combobox>
+		
+			
+			<combobox width="100%" value="โรงพยาบาลรามาธิบดี">
+				<comboitem label="โรงพยาบาลรามาธิบดี"/>
+			</combobox>
+		
 		<separator height="10px"/>
 		<button label="คำนวณ" width="100%" onClick='Executions.sendRedirect("/ncds/dyslipidemia/compare.zul")'/>
+		
+		<separator height="10px"/>
+		
+		<vbox width="100%" align="center" pack="start">
+		
+		<hbox align="center" pack="start" hflex="1">
+			<label value="เปรียบเทียบค่ารักษากับสวัสดิการ" />
+		</hbox>
+		
+		<hbox width="100%" align="center" pack="center" >
+	           
+                <hbox   hflex="3"  vflex="1" style="background-color: #F3F7FC; padding: 2px;" >
+                		  
+	                		<include src="/WEB-INF/ncds/bar.zul?indicator=room" indicator="a" topic="room"/>
+	               
+                </hbox>
+                 <separator width="1px"/>
+                <hbox  hflex="1" height="80px" style="background-color: #F3F7FC; padding: 2px;" align="center" pack="center"  >
+	                		<label value="ครอบคลุม"    />
+                </hbox>
+         </hbox>
+            
+          <hbox width="100%" align="center" pack="center"  >
+	            <hbox  hflex="4" vflex="1" >
+	                <hbox   hflex="3"   style="background-color: #F3F7FC; padding: 2px;" >
+	                		  
+		                		
+		                		<include src="/WEB-INF/ncds/bar.zul?indicator=medical" indicator="a" topic="room"/>
+		               
+	                </hbox>
+	               <separator width="1px"/>
+	                <hbox  hflex="1" height="80px" style="background-color: #F3F7FC; padding: 2px;" align="center" pack="center"  >
+	                		<label value="-100,000"   style="color: red;" />
+	                </hbox>
+                </hbox>
+         </hbox>
+        <separator height="5px"/>
+        <vbox width="100%" spacing=".1em">
+	         <hbox width="100%" align="center" pack="center"  style="background-color: #FBFCFE; padding: 2px;">
+		         	<hbox  hflex="2" vflex="1" align="center" pack="start" style="padding: 5px" >
+		         		ค่ารักษาโรคไขมันในเลือดสูง
+		         	</hbox>
+		         	<hbox  hflex="1" vflex="1"  align="center" pack="end" style="padding: 5px" >
+		         		THB 373,000
+		         	</hbox>
+	         </hbox>
+		     
+		     <hbox width="100%" style="background-color: #FBFCFE;">
+		         
+		       
+		           		<vbox align="center" pack="center" spacing="0"  hflex="1">
+			                		
+		                		</vbox>
+		                
+		               
+		                		<vbox align="center" pack="center" spacing="0"  hflex="1">
+			                		<label value="ค่าห้อง" style="font-size: 12px" />
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		               
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0">
+			                		<label value="ค่าผ่าตัด" style="font-size: 12px"/>
+			                		<label value="500,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		              
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" >
+			                		<label value="ค่ารักษา" style="font-size: 12px"/>
+			                		<label value="500,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" >
+			                		<label value="ค่าตรวจ" style="font-size: 12px"/>
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		        		
+         
+         		
+         		</hbox>
+         		
+         		 <hbox width="100%" style="background-color: #FBFCFE; ">
+		         
+		       
+		           		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		<label value="30 บาท" style="font-size: 12px"/>
+			                		<label value="รักษาทุกโรค" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               
+		                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		               
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="50,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		              
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="500" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		        		
+         
+         		
+         		</hbox>
+         		<hbox width="100%" style="background-color: #FBFCFE; ">
+		         
+		       
+		           		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		<label value="AIA 20PAY" style="font-size: 12px"/>
+			                		<label value="LIFE (PAR)" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               
+		                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		               
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="50,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		              
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="500" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="5,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		        		
+         
+         		
+         		</hbox>
+         		<hbox width="100%" style="background-color: #FBFCFE; ">
+		         
+		       
+		           		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		<label value="." style="font-size: 12px"/>
+			                		<label value="." style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               
+		                		<vbox align="center" pack="center" spacing="0"  hflex="1" vflex="1">
+			                		
+			                		<label value="ครอบคลุม" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		               
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="-50,000" style="font-size: 12px"/>
+		                		</vbox>
+		               
+		              
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="-100,000" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		               		 <vbox align="center" pack="center" hflex="1" spacing="0" vflex="1">
+			                		
+			                		<label value="ครอบคลุม" style="font-size: 12px"/>
+		                		</vbox>
+		                
+		        		
+         
+         		
+         		</hbox>
+		</vbox>
 	</vbox>
+		
+		
+		
+	</vlayout>
 	
 	
 </zk>
