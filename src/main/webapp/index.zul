@@ -4,5 +4,6 @@
 		validationMessages="@id('vmsgs')">
 		<hlayout>count: <label value="@load(vm.count)" /></hlayout>
 		<button label="add" onClick="@command('cmd')"/>
+		test new repo
 	</window>
 </zk>
