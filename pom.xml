@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.healthrecord</groupId>
-	<artifactId>m14health</artifactId>
+	<artifactId>mobile</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<zk.version>8.5.0</zk.version>
@@ -11,8 +11,8 @@
 		<packname>-${project.version}-FL-${maven.build.timestamp}</packname>
 	</properties>
 	<packaging>war</packaging>
-	<name>The m14health Project</name>
-	<description>The m14health Project</description>
+	<name>The mobile Project</name>
+	<description>The mobile Project</description>
 	<licenses>
 		<license>
 			<name>GNU LESSER GENERAL PUBLIC LICENSE, Version 3</name>
@@ -59,6 +59,11 @@
 			<groupId>org.zkoss.zk</groupId>
 			<artifactId>zhtml</artifactId>
 			<version>${zk.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.zkoss.chart</groupId>
+		    <artifactId>zkcharts</artifactId>
+		    <version>1.0.0</version>
 		</dependency>
 		
 		<dependency>
@@ -111,7 +116,7 @@
 							<goal>single</goal>
 						</goals>
 						<configuration>
-							<finalName>m14health${packname}</finalName>
+							<finalName>mobile${packname}</finalName>
 							<appendAssemblyId>false</appendAssemblyId>
 							<descriptors>
 								<descriptor>src/main/assembly/webapp.xml</descriptor>

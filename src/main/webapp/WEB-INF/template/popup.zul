@@ -1,0 +1,35 @@
+<zk>
+   <style>
+       .my-north, .z-north-body {
+       		padding: 0px; 
+       }
+       .my-south, .z-south-body {
+       		padding: 0px;
+       }
+       .my-hbox, .z-hbox-separator {
+       		width: 0px;
+       }
+       
+    </style>
+
+	<?meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"?>
+	<?link rel="stylesheet" type="text/css" href="/css/style.css" ?>
+	
+	<borderlayout  width="100%" height="100%" >
+	
+		
+			<north  border="none" height="40px" >
+				
+				
+				<hbox self="@insert(top)" width="100%"/>
+			
+			</north>
+		
+			<center border="none" flex="true" autoscroll="true" style="background-color: #D9E6F5;">
+				<vbox self="@insert(content)"/>
+               
+            </center>
+		
+	</borderlayout>
+	
+</zk>

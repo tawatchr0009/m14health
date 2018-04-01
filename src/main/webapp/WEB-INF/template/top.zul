@@ -1,0 +1,14 @@
+<zk>
+
+	<hbox style="background-color: #F7FAFD;" hflex="3" align="center" pack="center" height="100%" >
+		<hbox hflex="2" align="center" pack="start" vflex="1" >
+			<image src="/images/icons/menu01.png" height="35px"/>
+			<image src="/images/icons/healthrecord01.png" height="35px"/>
+		</hbox>
+		
+		<hbox hflex="1" align="center" pack="end" vflex="1">
+			
+		</hbox>
+	</hbox>
+
+</zk>

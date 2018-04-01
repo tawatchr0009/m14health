@@ -1,0 +1,5 @@
+<zk>
+	<div apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('com.healthrecord.mobile.vm.BarChartVM')" >
+		<charts id="chart" type="bar" width="220" height="80" title=""/>
+	</div>
+</zk>

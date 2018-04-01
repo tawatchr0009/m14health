@@ -1,0 +1,28 @@
+<zk>
+	 <hbox style="background-color: #F6F9FC; " hflex="4" align="center" pack="center" height="100%" >
+					<hbox hflex="1" align="center" pack="center" vflex="1" style="border: 0px; border-style: solid; border-color: black">
+						<vbox align="center" pack="center" onClick='Executions.sendRedirect("/home.zul")'>
+							<image src="/images/icons/home03.png" width="40px"/>
+							<label value="Home" />
+						</vbox>
+					</hbox>
+					<hbox hflex="1" align="center" pack="center" vflex="1" style="border: 0px; border-style: solid; border-color: black">
+						<vbox align="center" pack="center" onClick='Executions.sendRedirect("/NCDs.zul")'>
+							<image src="/images/icons/ncd01.png" width="40px"/>
+							<label value="NCDs" />
+						</vbox>
+					</hbox>
+					<hbox hflex="1" align="center" pack="center" vflex="1" style="background-color: #5AAFFE; border: 0px; border-style: solid; border-color: black">
+						<vbox align="center" pack="center" >
+							<image src="/images/icons/hospital03.png" width="40px"/>
+							<label value="PLANNING" />
+						</vbox>
+					</hbox>
+					<hbox hflex="1" align="center" pack="center" vflex="1" style="border: 0px; border-style: solid; border-color: black">
+						<vbox align="center" pack="center" onClick='Executions.sendRedirect("/info.zul")'>
+							<image src="/images/icons/info01.png" width="40px"/>
+							<label value="MY INFO" />
+						</vbox>
+					</hbox>
+				</hbox>
+</zk>

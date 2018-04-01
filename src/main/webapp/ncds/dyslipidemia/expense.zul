@@ -1,0 +1,68 @@
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/WEB-INF/template/popup.zul"?>
+<zk>
+
+	<style>
+			.left-menu-box {
+			    border: 0px;
+			    border-top-left-radius: 5px;
+			    border-bottom-left-radius: 5px;		
+			    padding: 10px;	   
+			}
+			.right-menu-box {
+			    border: 0px;
+			    border-top-right-radius: 5px;
+			    border-bottom-right-radius: 5px;			   
+			    padding: 10px;
+			}
+			.left-box {
+			    border: 0px;
+			    border-top-left-radius: 5px;
+			    border-bottom-left-radius: 5px;			   
+			}
+			.right-box {
+			    border: 0px;
+			    border-top-right-radius: 5px;
+			    border-bottom-right-radius: 5px;			   
+			}
+			 
+	</style>
+	<hbox  self="@define(top)" style="background-color: #F7FAFD; padding: 5px" 
+					 align="center" pack="center" hflex="1">
+					 
+		<hbox hflex="1" align="center" pack="start" >
+			<image src="/images/icons/arrow-left.png" height="30px" onClick='Executions.sendRedirect("/NCDs.zul")'/>
+			<label value="ไขมันในเลือดสูง (Dyslipidemia)" height="35px"  onClick='Executions.sendRedirect("/NCDs.zul")'/>
+		</hbox>
+		
+		
+	</hbox>
+	<vbox self="@define(content)" vflex="1" hflex="2" align="center" pack="start">
+		<hbox hflex="2">
+			<hbox hflex="1" align="center" pack="center" style="background-color: #FBFCFE" zclass="left-menu-box">
+				<image src="/images/icons/indicators.png" height="30px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+				<label value="INCIATORS"  onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+			</hbox>
+			<hbox hflex="1" align="center" pack="center" style="background-color: #5AA2FF" zclass="right-menu-box">
+				<image src="/images/icons/money01.png" height="30px" />
+				<label value="ประเมิณค่ารักษา" />
+			</hbox>
+		</hbox>
+		<separator height="10px"/>
+		<hbox align="center" pack="start" width="100%" >
+			<label value="สวัสดิการที่นำมาคำนวณ" />
+		</hbox>
+		
+		
+		<separator height="10px"/>
+		<hbox align="center" pack="start" width="100%" >
+			<label value="โรงพยาบาล" />
+		</hbox>
+		<combobox width="100%" value="โรงพยาบาลรามาธิบดี">
+			<comboitem label="โรงพยาบาลรามาธิบดี"/>
+		</combobox>
+		<separator height="10px"/>
+		<button label="คำนวณ" width="100%" onClick='Executions.sendRedirect("/ncds/dyslipidemia/compare.zul")'/>
+	</vbox>
+	
+	
+</zk>

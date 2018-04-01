@@ -1,0 +1,52 @@
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/WEB-INF/template/popup.zul"?>
+<zk>
+
+	<hbox  self="@define(top)" style="background-color: #F7FAFD; padding: 5px" 
+					 align="center" pack="center" hflex="1">
+					 
+		<hbox hflex="1" align="center" pack="start" >
+			<image src="/images/icons/arrow-left.png" height="30px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+			<label value="เปรียบเทียบค่ารักษากับสวัสดิการ" height="35px"  onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+		</hbox>
+		
+		
+	</hbox>
+
+	<vbox self="@define(content)" vflex="1"  hflex="1" align="center" pack="start">
+		
+		<hbox align="center" pack="start" hflex="1">
+			<label value="ไขมันในเลือดสูง - โรงพยาบาลรามาธิบดี" />
+		</hbox>
+		
+		<hbox width="100%" align="center" pack="center" >
+	           
+                <hbox   hflex="3"  vflex="1" style="background-color: #F3F7FC; padding: 2px;" >
+                		  
+	                		<include src="/WEB-INF/ncds/bar.zul?indicator=room" indicator="a" topic="room"/>
+	               
+                </hbox>
+                 <separator width="1px"/>
+                <hbox  hflex="1" height="80px" style="background-color: #F3F7FC; padding: 2px;" align="center" pack="center"  >
+	                		<label value="ครอบคลุม"    />
+                </hbox>
+         </hbox>
+            
+          <hbox width="100%" align="center" pack="center"  >
+	            <hbox  hflex="4" vflex="1" >
+	                <hbox   hflex="3"   style="background-color: #F3F7FC; padding: 2px;" >
+	                		  
+		                		
+		                		<include src="/WEB-INF/ncds/bar.zul?indicator=medical" indicator="a" topic="room"/>
+		               
+	                </hbox>
+	               <separator width="1px"/>
+	                <hbox  hflex="1" height="80px" style="background-color: #F3F7FC; padding: 2px;" align="center" pack="center"  >
+	                		<label value="-100,000"   style="color: red;" />
+	                </hbox>
+                </hbox>
+         </hbox>
+        
+        
+	</vbox>
+	
+</zk>
