@@ -3,7 +3,10 @@ package com.healthrecord.mobile.model;
 import java.io.Serializable;
 import java.util.Arrays;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @SuppressWarnings("serial")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UserProfileM implements Serializable {
 
 	private String id;
