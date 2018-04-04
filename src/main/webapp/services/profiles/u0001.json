@@ -1,0 +1,13 @@
+{
+	"id":"u0001"
+	,"indicators":[
+			{"id":"cholesteral","value":"210","date":"20180310"
+				,"historys":[
+						{"value":"200","date":"20180110"},
+						{"value":"220","date":"20180210"},
+						{"value":"200","date":"20180310"}
+					]
+			},
+			{"id":"triglyceride","value":"220"}
+	]
+}
