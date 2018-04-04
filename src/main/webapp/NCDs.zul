@@ -28,10 +28,10 @@
 			<label value="ไขมันในเลือดสูง (Dyslipidemia)" zclass="zHealthFont" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
 			</hbox>
 			<hbox hflex="1"  zclass="ncds-content-box">
-				<image src="/images/ncds/ncds01.png" height="60px"/>
-				<image src="/images/ncds/ncds05.png" height="60px"/>
-				<image src="/images/ncds/ncds03.png" height="60px"/>
-				<image src="/images/ncds/ncds06.png" height="60px"/>
+				<image src="/images/ncds/ncds01.png" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+				<image src="/images/ncds/ncds05.png" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+				<image src="/images/ncds/ncds03.png" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+				<image src="/images/ncds/ncds06.png" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
 			</hbox>
 		</vbox>
 		<separator height="5px"/>

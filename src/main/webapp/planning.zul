@@ -1,9 +1,83 @@
 <?init class="org.zkoss.zk.ui.util.Composition" arg0="/WEB-INF/template/layout03.zul"?>
 <zk>
-	<vbox self="@define(content)" vflex="1" hflex="1" align="center" pack="center">
+
+	<vlayout self="@define(content)" hflex="1"   spacing="0">
 		
-		Planning
+			<hbox hflex="1"  >
+				<hbox hflex="1" vflex="1" align="center" pack="start"
+					style="background-color: #F0F5FB; padding: 2px" zclass="header-left-box">
+					<label value="ไขมันในเลือดสูง" style="color: #5BABFF"/>
+				</hbox>
+				<hbox hflex="1" vflex="1" align="center" pack="end" style="background-color: #F0F5FB; padding: 2px"  zclass="header-right-box">
+					<button label="more"  onClick='Executions.sendRedirect("/planning/detail.zul")'
+						style="background-color: #F0F5FB; color: #5BABFF; padding: 2px; font-size: 12px;" sclass="text-button"/>
+				</hbox>
+			</hbox>
+			
 		
-	</vbox>
+		
+			<hbox hflex="1" spacing="1" style="background-color: black;">
+				
+					<image src="/planning/item01.png" hflex="1"/>
+					
+				
+					<image src="/planning/item02.png"  hflex="1"/>
+				
+					<image src="/planning/item03.png"  hflex="1"/>
+					
+				
+			</hbox>
+			
+			<separator height="10px"/>
+			
+			<hbox hflex="1"  >
+				<hbox hflex="1"  align="center" pack="start"
+					style="background-color: #F0F5FB; padding: 2px" zclass="header-left-box">
+					<label value="โรคไต" style="color: #5BABFF"/>
+				</hbox>
+				<hbox hflex="1"  align="center" pack="end" style="background-color: #F0F5FB; padding: 2px"  zclass="header-right-box">
+					<button label="more" style="background-color: #F0F5FB; color: #5BABFF; padding: 2px; font-size: 12px;" sclass="text-button"/>
+				</hbox>
+			</hbox>
+			
+		
+		
+			<hbox hflex="1" spacing="1" style="background-color: black;">
+				
+					<image src="/planning/item01.png" hflex="2"/>
+					
+				
+					<image src="/planning/item02.png"  hflex="2"/>
+				
+					<image src="/planning/item03.png"  hflex="2"/>
+					
+				
+			</hbox>
+		<separator height="10px"/>
+			
+			<hbox hflex="1"  >
+				<hbox hflex="1" vflex="1" align="center" pack="start"
+					style="background-color: #F0F5FB; padding: 2px" zclass="header-left-box">
+					<label value="โรคไต" style="color: #5BABFF"/>
+				</hbox>
+				<hbox hflex="1" vflex="1" align="center" pack="end" style="background-color: #F0F5FB; padding: 2px"  zclass="header-right-box">
+					<button label="more" style="background-color: #F0F5FB; color: #5BABFF; padding: 2px; font-size: 12px;" sclass="text-button"/>
+				</hbox>
+			</hbox>
+			
+		
+		
+			<hbox hflex="1" spacing="1" style="background-color: black;">
+				
+					<image src="/planning/item01.png" hflex="2"/>
+					
+				
+					<image src="/planning/item02.png"  hflex="2"/>
+				
+					<image src="/planning/item03.png"  hflex="2"/>
+					
+				
+			</hbox>
+	</vlayout>
 	
 </zk>

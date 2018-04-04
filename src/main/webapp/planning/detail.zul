@@ -1,0 +1,70 @@
+<?init class="org.zkoss.zk.ui.util.Composition" arg0="/WEB-INF/template/popup.zul"?>
+<zk>
+
+	<hbox  self="@define(top)" style="background-color: #F7FAFD; padding: 5px" 
+					 align="center" pack="center" hflex="1">
+					 
+		<hbox hflex="1" vflex="1" align="center" pack="start" >
+			
+			<button onClick='Executions.sendRedirect("/planning.zul")' 
+			style="font-size: 12px; background-color: #F7FAFD; color: black;"
+				label="ไขมันในเลือดสูง (Dyslipidemia)" image="/images/icons/arrow-left.png" sclass="text-button" />
+			
+		</hbox>
+		
+		
+	</hbox>
+	<vlayout self="@define(content)" hflex="1" style="padding: 0px">
+	
+			<vbox hflex="1" spacing="0">
+		
+				<hbox hflex="1"  align="center" pack="start"
+					style="background-color: #F0F5FB; padding: 2px" zclass="header-box">
+					<label value="คำแนะนำสำหรับการดูแลตนเอง" style="color: #5BABFF"/>
+				</hbox>
+				<hbox hflex="1"  align="center" pack="center" style="background-color: #F0F5FB; padding: 2px" >
+					<hbox hflex="1" style="background-color: white; padding: 5px;" align="center" pack="center">
+						<image src="/planning/detail01_01.png" hflex="1"/>
+						<vbox hflex="1" align="center" pack="center">
+							<label value="ออกกำลังกาย"/>
+							<label value="Cardio ลดไขมัน" />
+						</vbox>
+					</hbox>
+					<separator width="4px"/>
+					<hbox hflex="1" style="background-color: white;padding: 5px;" align="center" pack="center">
+						<image src="/planning/detail01_02.png"  hflex="1"/>
+						<vbox hflex="1" align="center" pack="center" >
+								<label value="ออกกำลังกาย"/>
+								<label value="Cardio ลดไขมัน" />
+						</vbox>
+					</hbox>
+				</hbox>
+			</vbox>
+			<separator height="5px"/>
+			<vbox hflex="1" spacing="0">
+		
+				<hbox hflex="1"  align="center" pack="start"
+					style="background-color: #F0F5FB; padding: 2px" zclass="header-box">
+					<label value="ผลิตภัณฑ์ดูแลสุขภาพ" style="color: #5BABFF"/>
+				</hbox>
+				<hbox hflex="1"  align="center" pack="center" style="background-color: #F0F5FB; padding: 2px" >
+					<hbox hflex="1" style="background-color: white;padding: 5px;" align="center" pack="center">
+						<image src="/planning/detail02_01.png" hflex="1"/>
+						<vbox hflex="1" align="center" pack="center">
+							<label value="ออกกำลังกาย"/>
+							<label value="Cardio ลดไขมัน" />
+						</vbox>
+					</hbox>
+					<separator width="4px"/>
+					<hbox hflex="1" style="background-color: white; padding: 5px;" align="center" pack="center">
+						<image src="/planning/detail02_02.png"  hflex="1"/>
+						<vbox hflex="1" align="center" pack="center" >
+								<label value="ออกกำลังกาย"/>
+								<label value="Cardio ลดไขมัน" />
+						</vbox>
+					</hbox>
+				</hbox>
+			</vbox>
+	</vlayout>
+	
+</zk>
