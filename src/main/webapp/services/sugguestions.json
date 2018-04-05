@@ -15,19 +15,19 @@
 						,{"id":"item0010","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item10.png"}
 					]
 			,"suggestion_product":[
-				{"id":"myself","name_en":"take care by self","คำแนะนำสำหรับการดูแลตนเอง"
+				{"id":"myself","name_en":"take care by self", "name_th":"คำแนะนำสำหรับการดูแลตนเอง"
 					,"products":[
-						{"item001","item002"}
+						"item001","item002"
 					]
 				}
-				,{"id":"health_product","name_en":"Health Suppliment","ผลิตภัณฑ์ดูแลลสุขภาพ"
+				,{"id":"health_product","name_en":"Health Suppliment","name_th":"ผลิตภัณฑ์ดูแลลสุขภาพ"
 				 	,"products":[
-				 		{"item009","item003"}
+				 		"item009","item003"
 				 	]				 		
 				}				
 			]
 			,"hilight_product":[
-				{"item001","item002","item003"}			
+				"item001","item002","item003"		
 			]
 		}
 		,{"id":"hypertension"
@@ -40,14 +40,14 @@
 			]
 				
 			,"suggestion_product":[
-				{"id":"myself","name_en":"take care by self","คำแนะนำสำหรับการดูแลตนเอง"
+				{"id":"myself","name_en":"take care by self","name_th":"คำแนะนำสำหรับการดูแลตนเอง"
 					,"products":[
-						{"item004","item002"}
+						"item004","item002"
 					]
 				}
-				,{"id":"health_product","name_en":"Health Suppliment","ผลิตภัณฑ์ดูแลลสุขภาพ"
+				,{"id":"health_product","name_en":"Health Suppliment","name_th":"ผลิตภัณฑ์ดูแลลสุขภาพ"
 				 	,"products":[
-				 		{"item001","item003"}
+				 		"item001","item003"
 				 	]				 		
 				}				
 			]
