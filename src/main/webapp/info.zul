@@ -1,9 +1,20 @@
 <?init class="org.zkoss.zk.ui.util.Composition" arg0="/WEB-INF/template/layout04.zul"?>
 <zk>
-	<vbox self="@define(content)" vflex="1" hflex="1" align="center" pack="center">
+	<vlayout self="@define(content)" vflex="1" hflex="1" >
 		
-		info
-		
-	</vbox>
+		<vbox hflex="1" align="center" pack="center" style="background-color: #F3F7FC; padding: 5px;" sclass="header-box">
+			<image src="/images/icons/profile01.png" height="150px"/>
+			<label value="Tawatchai Radom" style="font-size: 30px; color: #6A8CB4;"/>
+			<label value="15/05/1977" style=" font-size: 20px; color: #6A8CB4;"/>
+			<label value="Blood Type: O" style=" font-size: 20px; color: #6A8CB4;"/>
+			<button label="แก้ไข" style="background-color: #F0F5FB; color: #5BABFF; padding: 2px; font-size: 12px;" sclass="text-button"/>
+		</vbox>
+		<separator height="5px" />
+		<label value="ประวัติสุขภาพ" style="color: #6A8CB4" />
+		<vbox hflex="1" style="background-color: #FBFCFE; padding: 5px;" >
+			<label value="โรงพยาบาลรามาธิบดี" style=" font-size: 20px;"/>
+			<label value="17/07/2017" style=" font-size: 15px; color: #6A8CB4;"/>
+		</vbox>
+	</vlayout>
 	
 </zk>

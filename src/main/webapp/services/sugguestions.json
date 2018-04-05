@@ -1,0 +1,56 @@
+{
+	"id":"suggestions"
+	, "ncds_suggestion":[
+		{"id":"dysipidemoa"
+			,"products":[
+						{"id":"item0001","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item01.png"}
+						,{"id":"item0002","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item02.png"}
+						,{"id":"item0003","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item03.png"}
+						,{"id":"item0004","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item04.png"}
+						,{"id":"item0005","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item05.png"}
+						,{"id":"item0006","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item06.png"}
+						,{"id":"item0007","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item07.png"}
+						,{"id":"item0008","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item08.png"}
+						,{"id":"item0009","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item09.png"}
+						,{"id":"item0010","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item10.png"}
+					]
+			,"suggestion_product":[
+				{"id":"myself","name_en":"take care by self","คำแนะนำสำหรับการดูแลตนเอง"
+					,"products":[
+						{"item001","item002"}
+					]
+				}
+				,{"id":"health_product","name_en":"Health Suppliment","ผลิตภัณฑ์ดูแลลสุขภาพ"
+				 	,"products":[
+				 		{"item009","item003"}
+				 	]				 		
+				}				
+			]
+			,"hilight_product":[
+				{"item001","item002","item003"}			
+			]
+		}
+		,{"id":"hypertension"
+			,"products":[
+						{"id":"item0001","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item01.png"}
+						,{"id":"item0002","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item02.png"}
+						,{"id":"item0003","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item03.png"}
+						,{"id":"item0004","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item04.png"}
+						,{"id":"item0005","name":"ออกกำลังกาย","detail":"Cardioลดไขมัน","image_products":"/planning/item05.png"}
+			]
+				
+			,"suggestion_product":[
+				{"id":"myself","name_en":"take care by self","คำแนะนำสำหรับการดูแลตนเอง"
+					,"products":[
+						{"item004","item002"}
+					]
+				}
+				,{"id":"health_product","name_en":"Health Suppliment","ผลิตภัณฑ์ดูแลลสุขภาพ"
+				 	,"products":[
+				 		{"item001","item003"}
+				 	]				 		
+				}				
+			]
+		}
+	]
+}
