@@ -32,9 +32,16 @@ public class NCDsVM implements Serializable{
 			ncds = new ArrayList<NCDsM>();
 		}
 	}
+	public String getIndicatorLevel(UserProfileM profile,String indicator) throws Exception {
+		profile.getIndicators().
+		return "bg01.png";
+	}
+	public String getIndicatorBackground(UserProfileM profile,String indicator) throws Exception {
+		return "bg01.png";
+	}
 	public AImage getIndicatorImage(UserProfileM profile,String indicator) throws Exception {
 		
-		InputStream is = NCDsVM.class.getClassLoader().getResourceAsStream("/BUN");
+		InputStream is = NCDsVM.class.getClassLoader().getResourceAsStream("BMI.png");
 		
 		return new AImage("ima.png",is);
 	}

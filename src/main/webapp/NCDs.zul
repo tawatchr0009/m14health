@@ -19,7 +19,7 @@
 		}
 		
 	</style>
-	<vlayout self="@define(content)" vflex="1" hflex="1" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('com.healthrecord.mobile.vm.NCDsVM')" 
+	<vlayout self="@define(content)" style="overflow:auto"  vflex="1" hflex="1" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('com.healthrecord.mobile.vm.NCDsVM')" 
 		>
 		<label value="โรคที่มีความเสี่ยง" zclass="zHealthFont"/>
 		
@@ -29,9 +29,15 @@
 				<hbox hflex="1" zclass="ncds-name-box">
 				<label value="${c:cat4(each.name_th,' ( ',each.name_en,' )')}" zclass="zHealthFont" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
 				</hbox>
-				<hbox hflex="1"  zclass="ncds-content-box">
+				<hbox hflex="1"  zclass="ncds-content-box" style="padding: 5px;">
 					<zk forEach="${each.indicators}">
-						<image content="${vm.getIndicatorImage(each)}" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+						<vbox style="background-image: url('images/ncds/${vm.getIndicatorBackground(null,each)}'); width: 68px; height: 68px"
+							align="center" pack="center">
+							<!--<image content="${vm.getIndicatorImage(null,each)}" 
+								 onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>-->
+							<label value="${each}" style="font-size: 10px;"/>
+						</vbox>
+						<separator width="3px" />
 					</zk>	
 					
 				</hbox>
