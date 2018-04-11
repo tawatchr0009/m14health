@@ -1,6 +1,6 @@
 {
 	"id":"dysipidemoa",
-	"name_th":"โรคไขมันในเลือดสูง",
+	"name_th":"ความดันโลหิตสูง",
 	"name_en":"Dyslipidemia",
 	"indicators":[
 			{"id":"cholesteral"},

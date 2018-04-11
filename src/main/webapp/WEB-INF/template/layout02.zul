@@ -36,7 +36,7 @@
 			</north>
 		
 			<center border="none" flex="true" autoscroll="true" style="background-color: #D9E6F5;">
-				<vbox self="@insert(content)"/>
+				<vlayout self="@insert(content)"/>
                
             </center>
 		<south  border="0" style="background-color: white;" height="80px" >

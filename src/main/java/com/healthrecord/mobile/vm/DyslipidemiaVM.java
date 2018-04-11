@@ -21,7 +21,7 @@ import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.select.Selectors;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.healthrecord.mobile.model.NcdM;
+import com.healthrecord.mobile.model.NCDsM;
 import com.healthrecord.mobile.model.UserIndicatorM;
 import com.healthrecord.mobile.model.UserProfileM;
 import com.healthrecord.mobile.services.INDICATORS;
@@ -30,12 +30,13 @@ import com.healthrecord.mobile.services.NCDS;
 import com.healthrecord.mobile.services.USERPROFILE;
 import com.healthrecord.mobile.model.IndicatorID;
 import com.healthrecord.mobile.model.IndicatorM;
+import com.healthrecord.mobile.model.NCDsM;
 
 public class DyslipidemiaVM {
 	
 	
 	private UserProfileM profile;
-	private NcdM ncd;
+	private NCDsM ncd;
 	private List<IndicatorM> indicators = new ArrayList<IndicatorM>();
 	private Map<String, UserIndicatorM> userIndicators = new HashMap<String, UserIndicatorM>();
 
@@ -48,20 +49,20 @@ public class DyslipidemiaVM {
     public void initVM(){
 		System.out.println("initVM >>> ");
 		this.profile = callService(USERPROFILE.U0001, UserProfileM.class);
-		this.ncd = callService(NCDS.DYSLIPIDEMIA, NcdM.class);
+		this.ncd = callService(NCDS.DYSLIPIDEMIA, NCDsM.class);
 		this.indicators.clear();
 		
         if (null != ncd && ncd.getIndicators() != null &&
         		ncd.getIndicators().length > 0) {
         	
-        	for (IndicatorID _indicatorID : ncd.getIndicators()) {
-        		System.out.println("Indicator ID : " + _indicatorID);
-        		INDICATORS _indicator = INDICATORS.valueOf(_indicatorID.getId().toUpperCase());
-        		System.out.println("indicator : "+_indicator.url());
-        		IndicatorM indicatorM = callService(_indicator, IndicatorM.class);
-        		indicators.add(indicatorM);
-        		
-        	}        	
+//        	for (IndicatorID _indicatorID : ncd.getIndicators()) {
+//        		System.out.println("Indicator ID : " + _indicatorID);
+//        		INDICATORS _indicator = INDICATORS.valueOf(_indicatorID.getId().toUpperCase());
+//        		System.out.println("indicator : "+_indicator.url());
+//        		IndicatorM indicatorM = callService(_indicator, IndicatorM.class);
+//        		indicators.add(indicatorM);
+//        		
+//        	}        	
         }
         
         userIndicators.clear();
@@ -171,11 +172,11 @@ public class DyslipidemiaVM {
 	}
 	
 
-	public NcdM getNcd() {
+	public NCDsM getNcd() {
 		return ncd;
 	}
 
-	public void setNcd(NcdM ncd) {
+	public void setNcd(NCDsM ncd) {
 		this.ncd = ncd;
 	}
 

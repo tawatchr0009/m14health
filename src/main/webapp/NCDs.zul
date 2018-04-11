@@ -1,4 +1,5 @@
 <?init class="org.zkoss.zk.ui.util.Composition" arg0="/WEB-INF/template/layout02.zul"?>
+<?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 <zk>
 	<style>
 		.ncds-name-box {
@@ -18,36 +19,26 @@
 		}
 		
 	</style>
-	<vbox self="@define(content)" vflex="1" hflex="1" 
-		align="start" pack="start" >
-		
+	<vlayout self="@define(content)" vflex="1" hflex="1" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('com.healthrecord.mobile.vm.NCDsVM')" 
+		>
 		<label value="โรคที่มีความเสี่ยง" zclass="zHealthFont"/>
-		<separator height="5px"/>
-		<vbox  hflex="1">
-			<hbox hflex="1" zclass="ncds-name-box">
-			<label value="ไขมันในเลือดสูง (Dyslipidemia)" zclass="zHealthFont" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
-			</hbox>
-			<hbox hflex="1"  zclass="ncds-content-box">
-				<image src="/images/ncds/ncds01.png" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
-				<image src="/images/ncds/ncds05.png" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
-				<image src="/images/ncds/ncds03.png" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
-				<image src="/images/ncds/ncds06.png" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
-			</hbox>
-		</vbox>
-		<separator height="5px"/>
-		<vbox  hflex="1" >
-			<hbox hflex="1" zclass="ncds-name-box">
-			<label value="โรคความดันโลหิตสูง (Hypertension)" zclass="zHealthFont" />
-			</hbox>
-			
-			<hbox hflex="1"  zclass="ncds-content-box">
-				<image src="/images/ncds/ncds01.png" height="60px"/>
-				<image src="/images/ncds/ncds03.png" height="60px"/>
-				<image src="/images/ncds/ncds06.png" height="60px"/>
-				
-			</hbox>
-		</vbox>
-	</vbox>
+		
+		<zk forEach="${vm.ncds}">
+		  	<separator height="5px"/>
+			<vbox  hflex="1">
+				<hbox hflex="1" zclass="ncds-name-box">
+				<label value="${c:cat4(each.name_th,' ( ',each.name_en,' )')}" zclass="zHealthFont" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+				</hbox>
+				<hbox hflex="1"  zclass="ncds-content-box">
+					<zk forEach="${each.indicators}">
+						<image content="${vm.getIndicatorImage(each)}" height="60px" onClick='Executions.sendRedirect("/ncds/dyslipidemia/index.zul")'/>
+					</zk>	
+					
+				</hbox>
+			</vbox>
+		</zk>
+		
+	</vlayout>
 	
 	
 </zk>
