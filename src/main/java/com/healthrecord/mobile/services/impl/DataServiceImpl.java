@@ -9,6 +9,7 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.healthrecord.mobile.model.UserIndicatorM;
 import com.healthrecord.mobile.model.UserProfileM;
@@ -38,7 +39,12 @@ public abstract class DataServiceImpl<T extends Serializable,R extends CloudantR
 //		private static final long serialVersionUID = 1L;
 //		
 //	}
-	
+	public JsonNode getJsonNode() throws Exception {
+		InputStream is  = new URL(endpoint).openStream();
+		BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName(charset)));
+		 ObjectMapper mapper = new ObjectMapper();
+		 return mapper.readTree(rd);
+	}
 	public CloudantResultSetM<T>  get() throws Exception {
 		
 		

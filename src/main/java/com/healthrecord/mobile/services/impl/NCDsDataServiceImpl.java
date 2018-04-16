@@ -21,4 +21,9 @@ public class NCDsDataServiceImpl extends DataServiceImpl<NCDsM,NCDsResultSetM> i
 		return NCDsResultSetM.class;
 	}
 
+	public NCDsM getById(String id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

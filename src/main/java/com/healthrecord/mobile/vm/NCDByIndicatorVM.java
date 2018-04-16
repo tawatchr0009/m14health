@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.zkoss.bind.annotation.AfterCompose;
+import org.zkoss.bind.annotation.BindingParam;
 import org.zkoss.bind.annotation.ContextParam;
 import org.zkoss.bind.annotation.ContextType;
 import org.zkoss.bind.annotation.Init;
@@ -24,15 +25,18 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.healthrecord.mobile.model.NCDsM;
 import com.healthrecord.mobile.model.UserIndicatorM;
 import com.healthrecord.mobile.model.UserProfileM;
+import com.healthrecord.mobile.services.INCDsDataService;
 import com.healthrecord.mobile.services.INDICATORS;
 import com.healthrecord.mobile.services.IService;
 import com.healthrecord.mobile.services.NCDS;
 import com.healthrecord.mobile.services.USERPROFILE;
+import com.healthrecord.mobile.services.impl.NCDsDataServiceImpl;
+import com.healthrecord.mobile.services.impl.NCDsJsonNodeDataServiceImpl;
 import com.healthrecord.mobile.model.IndicatorID;
 import com.healthrecord.mobile.model.IndicatorM;
 import com.healthrecord.mobile.model.NCDsM;
 
-public class DyslipidemiaVM extends BaseVM{
+public class NCDByIndicatorVM extends BaseVM{
 	
 	
 	private UserProfileM profile;
@@ -46,36 +50,42 @@ public class DyslipidemiaVM extends BaseVM{
     }
 	
 	@Init
-    public void initVM(){
-		System.out.println("initVM >>> ");
-		this.profile = callService(USERPROFILE.U0001, UserProfileM.class);
-		this.ncd = callService(NCDS.DYSLIPIDEMIA, NCDsM.class);
-		this.indicators.clear();
-		
-        if (null != ncd && ncd.getIndicators() != null &&
-        		ncd.getIndicators().length > 0) {
-        	
-//        	for (IndicatorID _indicatorID : ncd.getIndicators()) {
-//        		System.out.println("Indicator ID : " + _indicatorID);
-//        		INDICATORS _indicator = INDICATORS.valueOf(_indicatorID.getId().toUpperCase());
-//        		System.out.println("indicator : "+_indicator.url());
-//        		IndicatorM indicatorM = callService(_indicator, IndicatorM.class);
-//        		indicators.add(indicatorM);
-//        		
-//        	}        	
-        }
-        
-        userIndicators.clear();
-        if (null != profile && 
-        		null != profile.getIndicators() && profile.getIndicators().length > 0) {
-        	for (UserIndicatorM _userIndicators : profile.getIndicators()) {
-        		userIndicators.put(_userIndicators.getId(), _userIndicators);
-        	}
-        }
-
-        System.out.println("User Profile : "+profile);
-        
-        Executions.getCurrent().getSession().setAttribute("USER_INDICATORS", userIndicators);
+    public void initVM(@BindingParam("ncds") String ncd_name){
+		try {
+//			String ncd_name = "dyslipidemia";
+			System.out.println("initVM >>> ");
+			this.profile = callService(USERPROFILE.U0001, UserProfileM.class);
+	//		this.ncd = callService(NCDS.DYSLIPIDEMIA, NCDsM.class);
+			this.ncd = getNCDByIndicator(ncd_name);
+			this.indicators.clear();
+			
+	        if (null != ncd && ncd.getIndicators() != null &&
+	        		ncd.getIndicators().length > 0) {
+	        	
+	//        	for (IndicatorID _indicatorID : ncd.getIndicators()) {
+	//        		System.out.println("Indicator ID : " + _indicatorID);
+	//        		INDICATORS _indicator = INDICATORS.valueOf(_indicatorID.getId().toUpperCase());
+	//        		System.out.println("indicator : "+_indicator.url());
+	//        		IndicatorM indicatorM = callService(_indicator, IndicatorM.class);
+	//        		indicators.add(indicatorM);
+	//        		
+	//        	}        	
+	        }
+	        
+	        userIndicators.clear();
+	        if (null != profile && 
+	        		null != profile.getIndicators() && profile.getIndicators().length > 0) {
+	        	for (UserIndicatorM _userIndicators : profile.getIndicators()) {
+	        		userIndicators.put(_userIndicators.getId(), _userIndicators);
+	        	}
+	        }
+	
+	        System.out.println("User Profile : "+profile);
+	        
+	        Executions.getCurrent().getSession().setAttribute("USER_INDICATORS", userIndicators);
+		} catch(Exception ex) {
+			ex.printStackTrace();
+		}
     }
 	
 	/*public NcdM initDyslipidemiaM() {
@@ -116,6 +126,14 @@ public class DyslipidemiaVM extends BaseVM{
 	
 
 
+
+	private NCDsM getNCDByIndicator(String id) throws Exception {
+		System.out.println("id:"+id);
+		String endpoint = "https://120f7ec5-945c-42e4-904b-e8cdf79f6b8e-bluemix.cloudant.com/ncds";
+		INCDsDataService dataService = new NCDsJsonNodeDataServiceImpl(endpoint);
+		return dataService.getById(id);
+	
+	}
 
 	public List<IndicatorM> getIndicators() {
 		return indicators;

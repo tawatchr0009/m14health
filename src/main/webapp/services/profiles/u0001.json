@@ -1,5 +1,16 @@
 {
 	"id":"u0001"
+	,"indicatorDoc":{
+		"id":"iDoc0001"
+		,"cholesteral": {"id":"cholesteral","value":"230","date":"20180310","indicator_role":"cholesteral_A0001"}
+		,"BUN": {"id":"BUN","value":"210","date":"20180310"}
+		,"BMI": {"id":"BMI","value":"32.0","date":"20180310","indicator_role":"BMI_A0001"}
+		,"LDL": {"id":"LDL","value":"122.0","date":"20180310","indicator_role":"LDL_A0001"}
+		,"HDL": {"id":"HDL","value":"52.0","date":"20180310","indicator_role":"HDL_A0001"}
+		,"triglyceride": {"id":"triglyceride","value":"172.0","date":"20180310","indicator_role":"triglyceride_A0001"}
+		
+		,"last_upate":"20180311000000"
+	}
 	,"indicators":[
 			{"id":"cholesteral","value":"210","date":"20180310"
 				,"historys":[

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>mdpi/icon/BMI_wh</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10.7208938,16.1904762 C11.3090384,16.8476033 11.6666667,17.7153707 11.6666667,18.6666667 C11.6666667,20.71801 10.0037243,22.3809524 7.95238095,22.3809524 L5.47619048,22.3809524 L3,22.3809524 L3,10 L7.95238095,10 C10.0037243,10 11.6666667,11.6629424 11.6666667,13.7142857 C11.6666667,14.6655817 11.3090384,15.5333491 10.7208938,16.1904762 Z M16.6190476,10 L19.0952381,12.4761905 L21.5714286,10 L24.047619,10 L24.047619,22.3809524 L21.5714286,22.3809524 L21.5714286,13.7142857 L19.0952381,16.1904762 L16.6190476,13.7142857 L16.6190476,22.3809524 L14.1428571,22.3809524 L14.1428571,10 L16.6190476,10 Z M5.47619048,17.4285714 L5.47619048,19.9047619 L7.95238095,19.9047619 C8.63616207,19.9047619 9.19047619,19.3504478 9.19047619,18.6666667 C9.19047619,17.9828855 8.63616207,17.4285714 7.95238095,17.4285714 L5.47619048,17.4285714 Z M5.47619048,12.4761905 L5.47619048,14.952381 L7.95238095,14.952381 C8.63616207,14.952381 9.19047619,14.3980668 9.19047619,13.7142857 C9.19047619,13.0305046 8.63616207,12.4761905 7.95238095,12.4761905 L5.47619048,12.4761905 Z M26.5238095,10 L29,10 L29,22.3809524 L26.5238095,22.3809524 L26.5238095,10 Z" id="path-1"></path>
+        <filter x="-7.7%" y="-8.1%" width="115.4%" height="132.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icon/BMI_wh" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Combined-Shape">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
